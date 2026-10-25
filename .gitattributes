@@ -1,0 +1,2 @@
+# Preserve the formatter's line endings on every platform.
+* text=auto eol=lf
