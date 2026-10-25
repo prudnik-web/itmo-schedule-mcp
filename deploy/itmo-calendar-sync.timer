@@ -1,0 +1,11 @@
+[Unit]
+Description=Check the ITMO schedule every hour
+
+[Timer]
+OnCalendar=*-*-* *:07:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=itmo-calendar-sync.service
+
+[Install]
+WantedBy=timers.target

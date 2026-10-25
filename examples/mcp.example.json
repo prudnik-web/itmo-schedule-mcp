@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "itmo": {
+      "type": "http",
+      "url": "https://itmo.example.com/mcp",
+      "headers": {
+        "X-ITMO-Username": "YOUR_ITMO_USERNAME",
+        "X-ITMO-Password": "YOUR_ITMO_PASSWORD"
+      }
+    }
+  }
+}

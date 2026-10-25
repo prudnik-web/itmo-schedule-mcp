@@ -1,0 +1,12 @@
+# Import INSIDE the existing global options block, or create that block first.
+# Merge into an existing default logger rather than declaring it twice.
+# Access-log suppression alone does not protect runtime proxy-error logs.
+log default {
+	format filter {
+		wrap json
+		fields {
+			request>headers>X-Itmo-Username delete
+			request>headers>X-Itmo-Password delete
+		}
+	}
+}

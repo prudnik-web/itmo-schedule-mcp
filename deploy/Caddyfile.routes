@@ -1,0 +1,17 @@
+# Import inside your HTTPS site block. Replace the example domain in your site config.
+@itmo_mcp path /mcp /healthz
+handle @itmo_mcp {
+	request_body {
+		max_size 16KB
+	}
+	reverse_proxy 127.0.0.1:3700 {
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Forwarded-Proto https
+		transport http {
+			dial_timeout 3s
+			response_header_timeout 50s
+		}
+	}
+}
+# No access logs for requests carrying reusable credentials.
+log_skip @itmo_mcp

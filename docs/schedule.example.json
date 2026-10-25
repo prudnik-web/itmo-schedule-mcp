@@ -1,0 +1,47 @@
+{
+  "date_start": "2026-10-26",
+  "date_end": "2026-10-27",
+  "timezone": "Europe/Moscow",
+  "days": [
+    {
+      "date": "2026-10-26",
+      "day_number": 1,
+      "week_number": 8,
+      "note": null,
+      "lessons": [
+        {
+          "pair_id": 900001,
+          "subject_id": 70001,
+          "subject": "Synthetic seminar",
+          "type": "Практика",
+          "time_start": "10:00",
+          "time_end": "11:30",
+          "start": "2026-10-26T10:00:00+03:00",
+          "end": "2026-10-26T11:30:00+03:00",
+          "teacher_id": null,
+          "teacher_name": "Test Teacher",
+          "group": "T3100",
+          "room": null,
+          "building": null,
+          "bld_id": null,
+          "main_bld_id": null,
+          "format": "Дистанционно",
+          "format_id": 3,
+          "work_type": null,
+          "work_type_id": null,
+          "flow_type_id": null,
+          "flow_id": null,
+          "zoom_url": "https://example.invalid/class",
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "day_number": 2,
+      "week_number": 8,
+      "note": null,
+      "lessons": []
+    }
+  ]
+}

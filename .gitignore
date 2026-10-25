@@ -1,0 +1,38 @@
+# Build outputs and local development state
+/bin/
+/dist/
+/coverage.out
+*.exe
+*.test
+*.log
+.DS_Store
+__pycache__/
+.venv/
+
+# Private account configuration and tokens (keep outside the checkout)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+google-client.json
+google-token.json
+itmo-headers.json
+*token*.json
+/mcp.json
+/config.json
+/config.local.*
+/state/
+/.local/
+primary-backups/
+status.json
+sync.lock
+schedule.json
+scheduled-task.xml
+.ssh/
+
+# Local release/audit reports
+FORK_REPORT.md
+SANITIZATION_REPORT.md

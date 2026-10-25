@@ -1,0 +1,22 @@
+[Unit]
+Description=Synchronize personal ITMO classes to Google Calendar
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=itmo-calendar-sync
+Group=itmo-calendar-sync
+StateDirectory=itmo-calendar-sync
+StateDirectoryMode=0700
+UMask=0077
+ExecStart=/opt/itmo-calendar-sync/itmo-calendar-sync sync --dir /var/lib/itmo-calendar-sync --scheduled
+TimeoutStartSec=11min
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LimitCORE=0

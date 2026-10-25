@@ -1,0 +1,14 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "date_end": {
+      "description": "Last date inclusive, YYYY-MM-DD in Europe/Moscow; defaults to six days after date_start. Maximum inclusive range: 31 days.",
+      "type": "string"
+    },
+    "date_start": {
+      "description": "First date inclusive, YYYY-MM-DD in Europe/Moscow; defaults to today. Maximum inclusive range: 31 days.",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

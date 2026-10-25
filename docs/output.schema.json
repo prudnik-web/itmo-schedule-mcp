@@ -1,0 +1,238 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "date_end": {
+      "type": "string"
+    },
+    "date_start": {
+      "type": "string"
+    },
+    "days": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "day_number": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "lessons": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "bld_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "building": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "end": {
+                  "description": "RFC3339 date-time in Europe/Moscow when an end time is provided",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "flow_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "flow_type_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "format": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "format_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "group": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "main_bld_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "pair_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "room": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "start": {
+                  "description": "RFC3339 date-time in Europe/Moscow when a start time is provided",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "subject": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "subject_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "teacher_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "teacher_name": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "time_end": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "time_start": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "work_type": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "work_type_id": {
+                  "type": [
+                    "null",
+                    "integer"
+                  ]
+                },
+                "zoom_url": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              },
+              "required": [
+                "pair_id",
+                "subject_id",
+                "subject",
+                "type",
+                "time_start",
+                "time_end",
+                "start",
+                "end",
+                "teacher_id",
+                "teacher_name",
+                "group",
+                "room",
+                "building",
+                "bld_id",
+                "main_bld_id",
+                "format",
+                "format_id",
+                "work_type",
+                "work_type_id",
+                "flow_type_id",
+                "flow_id",
+                "zoom_url",
+                "note"
+              ],
+              "type": "object"
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          },
+          "note": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "week_number": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          }
+        },
+        "required": [
+          "date",
+          "day_number",
+          "week_number",
+          "note",
+          "lessons"
+        ],
+        "type": "object"
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "timezone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "date_start",
+    "date_end",
+    "timezone",
+    "days"
+  ],
+  "type": "object"
+}

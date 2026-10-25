@@ -1,0 +1,8 @@
+# Merge into your private ~/.codex/config.toml.
+# Both environment variables must exist in the process launching Codex.
+[mcp_servers.itmo]
+url = "https://itmo.example.com/mcp"
+env_http_headers = { "X-ITMO-Username" = "ITMO_USERNAME", "X-ITMO-Password" = "ITMO_PASSWORD" }
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+enabled_tools = ["get_personal_schedule"]
